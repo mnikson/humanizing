@@ -1,0 +1,24 @@
+'use strict'
+
+module.exports = {
+  name: 'Humanizing',
+  version: '1.0.0',
+  env: process.env.NODE_ENV || 'development',
+  port: process.env.PORT || 8080,
+  base_url: process.env.BASE_URL || 'http://localhost:8080',
+  db: {
+    uri: 'mongodb://localhost:27017/humanizing',
+    test_uri: 'mongodb://localhost:27017/humanizing_test',
+  },
+  password: {
+    salt: 'wud9I28nMx&aeiU47Hy7%skdfHuw92Us0sd8a#128ewPsxuOw2'
+  },
+  paginate: {
+    per_page: 25,
+  },
+  test: false,
+  token: {
+    expire: 1440,  // expires in 24 hours
+    salt: 'Njsdash898dsnSydsan8&3n32jkdhs7a8nkmndmaiuHDNjdsshdyi*y'
+  }
+}

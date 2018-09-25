@@ -1,0 +1,12 @@
+node_modules
+.DS_Store
+*.dist
+!config.js.dist
+config.js
+.vscode/
+.history/
+.idea/
+!.env.dist
+.env
+test/_coverage
+.nyc_output

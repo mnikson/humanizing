@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "5ba7ef1355ccc3856c3507c9",
+    "name": "Dylan Dog",
+    "username": "mrdog",
+    "email": "user1@test.com",
+    "password": "$2b$10$xb2r5lFswRob.wTO63LvTeScSParGGGw2JFRKZ8o6T9QNoKcSzZBW",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1yZG9nIiwiaWF0IjoxNTM3NjI1MDk3LCJleHAiOjE1Mzc2MjY1Mzd9.zAcjfKxPU-O-0RzgEEl1LPr8KUCU9gb0tZosa9gyPIU",
+    "active": true,
+    "admin": true,
+    "created": "2018-09-20 10:55:25+0200",
+    "updated": "2018-09-20 10:55:25+0200"
+  },
+  {
+    "_id": "5ba7ef1355ccc3856c3507c0",
+    "name": "Tin Tin",
+    "username": "tintin",
+    "email": "user2@test.com",
+    "password": "$2b$10$xb2r5lFswRob.wTO63LvTeScSParGGGw2JFRKZ8o6T9QNoKcSzZBW",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1yZG9nIiwiaWF0IjoxNTM3NjI1MDk3I3n&sdYs.leHAkU2MjY1Mzd9.zAcjfKxPU-O-0RzgEEl1LPr8KUCU9gb0tZosa9gyPIP",
+    "active": true,
+    "admin": false,
+    "created": "2018-09-20 10:55:25+0200",
+    "updated": "2018-09-20 10:55:25+0200"
+  },
+  {
+    "_id": "5ba7ef1355ccc3856c3507c1",
+    "name": "Captain America",
+    "username": "america",
+    "email": "user3@test.com",
+    "password": "$2b$10$xb2r5lFswRob.wTO63LvTeScSParGGGw2JFRKZ8o6T9QNoKcSzZBW",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1yZG9nIiwiaWF0IjoxNTM3NjI1MDk3I3n&sdYs.leHAkU2MjY1Mzd9.zAcjfKxPU-O-0RzgEEl1LPr8KUCU9gb0tZosa9gyPIL",
+    "active": true,
+    "admin": false,
+    "created": "2018-09-20 10:55:25+0200",
+    "updated": "2018-09-20 10:55:25+0200"
+  }
+]
