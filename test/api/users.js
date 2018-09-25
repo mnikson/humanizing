@@ -144,56 +144,13 @@ describe('/v1/users', () => {
 
   })
 
-  describe('PUT method tests', () => {
-
-    it('should not create user, token not provided', async () => {
-      try {
-        let response = await chai.request(server)
-          .put('/v1/users')
-          .set('Accept', 'application/json')
-          .set('x-access-token', '')
-          .send({
-            user: null
-          })
-
-        let error = response.error
-        expect(error.status).to.be.equal(401)
-        let errorText = JSON.parse(error.text)
-        expect(errorText.message).to.be.equal(translate.__('No token provided'))
-        expect(errorText.statusCode).to.be.equal(401)
-      } catch (err) {
-        throw err
-      }
-    })
-
-    it('should not create user, invalid token', async () => {
-      try {
-        let result = await chai.request(server)
-          .put('/v1/users')
-          .set('Accept', 'application/json')
-          .set('x-access-token', 'random_token')
-          .send({
-            user: null
-          })
-
-        should(result).be.type('object')
-        should(result).have.property('error')
-        let error = JSON.parse(result.error.text)
-        should(error).be.type('object')
-        assert.equal(error.statusCode, 401)
-        should(error).have.property('message')
-        assert.equal(error.message, translate.__('Invalid token'))
-      } catch (err) {
-        should.not.exist(err)
-        throw err
-      }
-    })
+  describe('POST method tests', () => {
 
     it('should not create user, data is empty', async () => {
       try {
         let token = generateToken('mrdog')
         let result = await chai.request(server)
-          .put('/v1/users')
+          .post('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', token)
           .send({
@@ -218,7 +175,7 @@ describe('/v1/users', () => {
       try {
         let token = generateToken('mrdog')
         let result = await chai.request(server)
-          .put('/v1/users')
+          .post('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', token)
           .send({
@@ -249,7 +206,7 @@ describe('/v1/users', () => {
       try {
         let token = generateToken('mrdog')
         let response = await chai.request(server)
-          .put('/v1/users')
+          .post('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', token)
           .send({
@@ -287,12 +244,12 @@ describe('/v1/users', () => {
 
   })
 
-  describe('POST method tests', () => {
+  describe('PUT method tests', () => {
 
     it('should not update user, token not provided', async () => {
       try {
         let response = await chai.request(server)
-          .post('/v1/users')
+          .put('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', '')
           .send({
@@ -312,7 +269,7 @@ describe('/v1/users', () => {
     it('should not update user, invalid token', async () => {
       try {
         let result = await chai.request(server)
-          .post('/v1/users')
+          .put('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', 'random_token')
           .send({
@@ -336,7 +293,7 @@ describe('/v1/users', () => {
       try {
         let token = generateToken('mrdog')
         let result = await chai.request(server)
-          .post('/v1/users')
+          .put('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', token)
           .send({
@@ -360,7 +317,7 @@ describe('/v1/users', () => {
       try {
         let token = generateToken('mrdog')
         let response = await chai.request(server)
-          .post('/v1/users')
+          .put('/v1/users')
           .set('Accept', 'application/json')
           .set('x-access-token', token)
           .send({

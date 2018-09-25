@@ -46,7 +46,7 @@ module.exports = (server) => {
   OPTIONAL PARAMETERS IN PATH: none
   RESPONSE: user
   */
-  router.put('/users', userRtr.create)
+  router.post('/users', userRtr.create)
 
   // Update user
   /*
@@ -57,7 +57,7 @@ module.exports = (server) => {
   OPTIONAL PARAMETERS IN PATH: none
   RESPONSE: user
   */
-  router.post('/users', authMiddleware.authentication, userRtr.update)
+  router.put('/users', authMiddleware.authentication, userRtr.update)
 
   // Delete user
   /*
