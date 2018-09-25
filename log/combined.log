@@ -1,2 +1,0 @@
-{"name":"BadRequest","message":"Username or password missing","statusCode":400,"errorCode":400,"level":"error"}
-{"name":"UnprocessableEntity","message":"User not found","statusCode":422,"errorCode":422,"level":"error"}

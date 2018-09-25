@@ -1,2 +1,0 @@
-{"name":"BadRequest","message":"Username or password missing","statusCode":400,"errorCode":400,"level":"error","label":"humanizingLog","timestamp":"2018-09-24T21:08:01.120Z"}
-{"name":"UnprocessableEntity","message":"User not found","statusCode":422,"errorCode":422,"level":"error","label":"humanizingLog","timestamp":"2018-09-24T21:08:01.137Z"}

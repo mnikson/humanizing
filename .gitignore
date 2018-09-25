@@ -10,3 +10,4 @@ config.js
 .env
 test/_coverage
 .nyc_output
+log/*

@@ -6,9 +6,9 @@ This is the Humanizing API.
 
 Clone git repository `git clone GIT_URL`. Go to cloned directory and hit `npm install`.
 
-After cloning the code copy file `config.js.dist` to project root `.config.js`.
+After cloning the code copy file `./src/config.js.dist` to `./src/config.js`.
 
-If you need local ENV parameters, copy `.env.dist` file to `.env` file the root of the project.
+If you need local ENV parameters, copy `.env.dist` file to `.env` file in the project root directory.
 
 If you are in development mode, you can use `nodemon` for file watch. Start application with command `npm start dev`.
 
